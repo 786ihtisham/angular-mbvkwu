@@ -1,0 +1,19 @@
+.border-blue {
+	border : 2px solid blue;
+}
+.border-green {
+	border : 2px solid green !important;
+}
+.vl-1 {
+  border-left: 3px solid lightgrey;
+  height: 20px;
+}
+
+.vl-2 {
+  border-left: 3px solid lightgrey;
+  height: 40px;
+} 
+.vl-2 {
+  border-left: 2px solid lightgrey;
+  height: 80px;
+} 

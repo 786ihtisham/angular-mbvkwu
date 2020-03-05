@@ -1,0 +1,114 @@
+.customNavUL {
+	border-bottom : 1px solid darkblue ;
+	padding-bottom : 10px;
+}
+.nav-item {
+	padding : 10px;
+}
+.displayModalClass {
+	display : block;
+	background-color : #000000b8;
+}
+.rounded-5 {
+	border-radius : 50px ;
+}
+.hideModalClass {
+	display : none;
+}
+
+.facebook {
+	background-color : #3B5998 !important; 
+}
+/* md form */
+.md-form {
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.md-form input:not([type]), .md-form input[type="text"]:not(.browser-default), .md-form input[type="password"]:not(.browser-default), .md-form input[type="email"]:not(.browser-default), .md-form input[type="url"]:not(.browser-default), .md-form input[type="time"]:not(.browser-default), .md-form input[type="date"]:not(.browser-default), .md-form input[type="datetime"]:not(.browser-default), .md-form input[type="datetime-local"]:not(.browser-default), .md-form input[type="tel"]:not(.browser-default), .md-form input[type="number"]:not(.browser-default), .md-form input[type="search"]:not(.browser-default), .md-form input[type="phone"]:not(.browser-default), .md-form input[type="search-md"], .md-form textarea.md-textarea {
+	-webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+}
+.md-form .form-control {
+    height: auto;
+    padding: .6rem 0 .4rem 0;
+    margin: 0 0 .5rem 0;
+    background-color: transparent;
+    border-radius: 15px !important;
+	border : 1px solid lightgrey !important;
+}
+.card .md-form label {
+    font-weight: 300;
+	padding-left : 10px !important;
+}
+.md-form label {
+    position: absolute;
+    top: 0;
+    left: 10px !important;
+    font-size: 1rem;
+    color: #757575;
+    cursor: text;
+    -webkit-transition: color .2s ease-out, -webkit-transform .2s ease-out;
+    transition: color .2s ease-out, -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out, color .2s ease-out;
+    transition: transform .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out;
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+}
+.md-form input:not([type]):focus:not([readonly])+label, .md-form input[type="text"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="password"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="email"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="url"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="time"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="date"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="datetime"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="datetime-local"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="tel"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="number"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="search"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="phone"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="search-md"]:focus:not([readonly])+label, .md-form textarea.md-textarea:focus:not([readonly])+label {
+	color: #4285f4;
+}
+.md-form label.active {
+    -webkit-transform: translateY(-5px) scale(0.8);
+    transform: translateY(-5px) scale(0.8);
+}
+.md-form label.active {
+    font-size: 1rem;
+}
+/*----------*/
+/* css for divider */
+.divider {								/* minor cosmetics */
+	display: table; 
+	font-size: 20px; 
+	text-align: center; 
+	width: 100%; 						/* divider width */
+}
+.divider span { display: table-cell; position: relative; }
+.divider span:first-child, .divider span:last-child {
+	width: 50%;
+	top: 13px;							/* adjust vertical align */
+	-moz-background-size: 100% 2px; 	/* line width */
+	background-size: 100% 2px; 			/* line width */
+	background-position: 0 0, 0 100%;
+	background-repeat: no-repeat;
+}
+.divider span:first-child {				/* color changes in here */
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#000));
+	background-image: -webkit-linear-gradient(180deg, transparent, #000);
+	background-image: -moz-linear-gradient(180deg, transparent, #000);
+	background-image: -o-linear-gradient(180deg, transparent, #000);
+	background-image: linear-gradient(90deg, transparent, #000);
+}
+.divider span:nth-child(2) {
+	color: #000; padding: 0px 5px; width: auto; white-space: nowrap;
+}
+.divider span:last-child {				/* color changes in here */
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transparent));
+	background-image: -webkit-linear-gradient(180deg, #000, transparent);
+	background-image: -moz-linear-gradient(180deg, #000, transparent);
+	background-image: -o-linear-gradient(180deg, #000, transparent);
+	background-image: linear-gradient(90deg, #000, transparent);
+}

@@ -1,0 +1,127 @@
+<app-header-after-login></app-header-after-login>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-2 col-md-2 col-sm-2">
+			<app-adspace></app-adspace>
+		</div>
+		<div class="col-lg-8 col-md-8 col-sm-8" >
+			<div class="jumbotron bg-transparent mt-2">
+				<div class="container text-center ">
+					<div class="row">
+						<div class="col-lg-3">
+							<div class="card rounded-10 p-2 text-center border-success bg-primary-2 text-white">
+								<h4> Available Cash</h4>
+							</div>
+						</div>
+						<div class="col-lg-9">
+							<div class="card p-3 mt-3 rounded-0 border-primary-2"> 
+								<h3 class="text-center"> Text Placeholder </h3>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-3">
+							<div class="col-lg-8">
+								<div class="row">
+									<div class="col-lg-12">
+										<div class="mx-auto">
+												<!-- ADD Payment -->
+											<button class="btn btn-outline-dark paymentButton float-left" (click)="basicModal2.show()">
+												<i class="fa fa-plus"></i>
+												Add Payment 
+											</button>
+											<div class="marginTop mx-auto">
+												<table class="table">
+													<tr>
+														<th>Type</th>
+														<th>Account Number</th>
+														<th>Round up Amount</th>
+														<th>Remove</th>
+													</tr>
+													
+														<tr *ngFor="let addPayment of addPaymentObjects;let i = index">
+														<ng-container *ngIf="addPayment.addPaymentFlag == false">
+															<td > {{addPayment.type }}</td>
+															<td> {{addPayment.acountNumber }}</td>
+															<td>$ {{addPayment.roundUpAmount}}</td>
+															<td><a class="btn text-dark" (click)="removePayment(addPayment,i)"><i class="fa fa-close"></i></a></td>
+														</ng-container>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								
+								<!-- Modal For linked accounts  -->
+								<div mdbModal #basicModal2="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+								  <div class="modal-dialog" role="document">
+									<div class="modal-content">
+									  <div class="modal-header">
+										<h4 class="modal-title pull-left mainColor"> Linked Account Details </h4>
+									<button type="button" class="close pull-right" aria-label="Close" (click)="basicModal2.hide()">
+									  <span aria-hidden="true">&times;</span>
+									</button>
+										<br>
+									  </div>
+									  <div class="modal-body">
+											<div class="form-group">
+										  <label for="typee"> Type :</label>
+										  <input #typee type="text" class="form-control" id="typee" placeholder="Enter type ..">
+										</div>
+										<div class="form-group">
+										  <label for="acountNumber"> Account Number :</label>
+										  <input #acountNumber type="number" class="form-control" id="acountNumber" placeholder="Enter Acount Number ..">
+										</div>
+										<div class="form-group">
+										  <label for="roundAmount"> Round up Amount :</label>
+										  <input #roundAmount type="number" class="form-control" id="roundAmount" placeholder="Enter Round up Amount ..">
+										</div>
+										
+										<br>
+										<ng-template [ngIf]="alertMessage != '' ">
+												<div class="alert alert-danger"> {{alertMessage}}</div>
+										</ng-template>
+										<button class="btn btn-outline-dark paymentButton" (click) = "addPayment(typee.value,acountNumber.value,roundAmount.value,false);">
+											<i class="fa fa-plus"></i>
+											Add Payment 
+										</button>
+									  </div>
+									  <div class="modal-footer">
+										<button type="button" mdbBtn color="danger" class="waves-light" aria-label="Close" (click)="basicModal2.hide()" mdbWavesEffect>Close</button>
+									  </div>
+									</div>
+								  </div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="card p-3 border-primary-2 rounded-4">
+									<a  class="btn mt-3 p-2 text-d-none text-dark"  
+									routerLink="/orders" routerLinkActive="active" >
+									Orders </a>
+									<a   class="btn mt-3 p-2 text-d-none text-dark" 
+									routerLink="/orderhistory" routerLinkActive="active" >
+									Event Preferences </a>
+									<a  class="btn mt-3 p-2 text-d-none text-dark"  
+									routerLink="/groups" routerLinkActive="active">
+									Groups </a>
+									<a class="border-green   btn mt-3 p-2  text-d-none text-dark"  
+									routerLink="/linked-accounts" routerLinkActive="active">
+									Linked Accounts  </a>
+									<a class="btn mt-3 p-2 text-d-none text-dark"  
+									routerLink="/invites" routerLinkActive="active">
+									Invites  </a>
+									
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-lg-2 col-md-2 col-sm-2">
+			<app-adspace></app-adspace>
+		</div>
+	</div>
+</div>
+<app-footer></app-footer>

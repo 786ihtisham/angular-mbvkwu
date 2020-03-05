@@ -1,0 +1,25 @@
+.footer {
+   position: relative;
+   top : 150px;
+   left: 0px;
+   bottom: 0px;
+   width: 70%;
+   color: black;
+   text-align: left;
+   border-radius : 0px;
+}
+.socialIcon {
+	width : 20px;
+}
+.socialIconBtn {
+	 width : 40px;;
+}
+.socialIconsDiv {
+	margin-top : -40px !important;
+}
+@media (max-width : 680px){
+	
+	.socialIconsDiv {
+		margin-top : -15px !important;
+	}
+}

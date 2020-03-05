@@ -1,0 +1,14 @@
+html , body {
+	height : 100% !important;
+}
+.adSpace{
+	margin-top : 15px !important;
+	height : 550px !important;
+	border : 1px solid darkblue !important;
+}
+@media (max-width : 600px){
+	
+	.adSpace{
+		height : 150px !important;
+	}
+}

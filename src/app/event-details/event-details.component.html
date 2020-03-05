@@ -1,0 +1,81 @@
+<app-header></app-header>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-2 col-md-2 col-sm-2">
+			<app-adspace></app-adspace>
+		</div>
+		<div class="col-lg-8 col-md-8 col-sm-8" >
+			<div class="jumbotron eventsSection mt-2">
+				<div class="container text-center ">
+					<h1 class="text-white"> {{eventHeading}}</h1>
+					<h5 class="text-white"> {{eventDateFrom }} {{eventTimeFrom}} - {{eventDateTo}} {{eventTimeTo}} {{eventLocation}}</h5>
+					
+					<div class="row mt-3 mx-auto">
+						<div class="col-lg-4">
+							<button mdbBtn type="button"  color="light" outline="true" mdbWavesEffect>Tickets</button>
+						</div>
+						<div class="col-lg-4">
+							<button mdbBtn type="button" color="light" outline="true" mdbWavesEffect>Details</button>
+						</div>
+						<div class="col-lg-4">
+							<button mdbBtn type="button" color="light" outline="true" mdbWavesEffect>LOCATION</button>
+						</div>
+					</div>
+					<div class="jumbotron p-2 rounded-0 mt-3 bg-white">
+						<div class="text-center">
+							<h4> Tickets </h4>
+							<p class="border "> {{eventState}} </p>
+						</div>
+					</div>
+					<div class="jumbotron p-4 rounded-0 mt-1 bg-white">
+						<div class="text-center">
+							<h4> Event Details </h4>
+						</div>
+						<hr>
+						<div class="row mt-3">
+							<div class="col-lg-8">
+								<p class="text-left"> {{eventDetails}} </p>
+							</div>
+							<div class="col-lg-4">
+								<img src="/assets/images/Koala.jpg" class="img-fluid">
+							</div>
+						</div>
+						<div class="text-center">
+							<h4> Share Event </h4>
+							<button mdbBtn type="button" size="sm" color="primary" class="facebook" mdbWavesEffect>
+							  <mdb-icon fab icon="facebook" size="lg" ></mdb-icon> FACEBOOK
+							</button>
+							<button mdbBtn type="button" size="sm"  color="primary" class="linkedin" mdbWavesEffect>
+							  <mdb-icon fab icon="linkedin" size="lg" class="mr-1"></mdb-icon> LINKEDIN
+							</button>
+							<button mdbBtn type="button" size="sm"  color="primary" class="twitter" mdbWavesEffect>
+							  <mdb-icon fab icon="twitter" size="lg" class="mr-1"></mdb-icon>	TWITTER
+							</button>
+							<button mdbBtn type="button" size="sm"  color="primary" class="googlePlus" mdbWavesEffect>
+							  <mdb-icon fab icon="google-plus" size="lg" class="mr-1"></mdb-icon> GOOGLE+
+							</button>
+							<button mdbBtn type="button" size="sm"  color="primary" class="whatsapp" mdbWavesEffect>
+							  <mdb-icon fab icon="whatsapp" size="lg" class="mr-1"></mdb-icon> WHATSAPP
+							</button>
+							<button mdbBtn type="button" size="sm"  color="primary" class="" mdbWavesEffect>
+							  <mdb-icon fas icon="at" size="lg" class="mr-1"></mdb-icon>	EMAIL
+							</button>
+						</div>
+						<agm-map [latitude]="lat" [longitude]="lng"
+								  [fullscreenControl]="true"
+  								  [fullscreenControlOptions]="screenOptions"
+  								  >
+							
+						</agm-map>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-lg-2 col-md-2 col-sm-2">
+			<app-adspace></app-adspace>
+		</div>
+	</div>
+</div>
+<app-footer></app-footer>

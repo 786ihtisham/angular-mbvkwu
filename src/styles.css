@@ -1,0 +1,186 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+html,body {
+	height : 100% !important;
+}
+.customNavUL {
+	border-bottom : 1px solid darkblue ;
+	padding-bottom : 10px;
+}
+.nav-item {
+	padding : 10px;
+}
+.logo {
+	width : 70% !important;
+}
+.line {
+	border-color : #77BD8B;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+}
+.line-2 {
+	border-color : #77BD8B;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+	width : 50%;
+}
+.line-3 {
+	border-color : #77BD8B;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+	width : 25%;
+}
+.text-d-none {
+	text-decoration : none;
+}
+.border-blue {
+	border : 2px solid blue;
+}
+.border-green {
+	border : 2px solid green !important;
+}
+.rounded-5 {
+	border-radius : 50px !important;
+}
+.rounded-6 {
+	border-radius : 60px ;
+}
+.rounded-7 {
+	border-radius : 70px ;
+}
+.rounded-8 {
+	border-radius : 80px ;
+}
+.rounded-9 {
+	border-radius : 90px ;
+}
+.rounded-10 {
+	border-radius : 100px ;
+}
+.rounded-11 {
+	border-radius : 110px ;
+}
+.rounded-12 {
+	border-radius : 120px ;
+}
+.bg-primary-2 {
+	background-color : #81a8d3;
+}
+.border-primary-2 {
+	border : 2px solid darkblue;
+}
+.text-grey {
+	color : grey;
+}
+.text-lightgrey {
+	color : lightgrey;
+}
+.text-d-none:hover {
+	text-decoration : none;
+}
+.giveSpace {
+	padding-left : 30px !important;
+	padding-right : 30px !important;
+	padding-top : 5px !important;
+}
+.marginTop {
+	margin-top : 20px !important;
+}
+
+.borderRadius {
+	border-radius : 0px !important;
+}
+
+.mainColor {
+	color : #F14F23 !important;
+}
+
+.whiteFont {
+	color : white !important;
+}
+.customBtnHeader:hover {
+	background-color : #343A40 !important;
+}
+
+.fullHeight {
+	height : 100% !important;
+}
+
+td ,th{
+	background-color : #E9EDF4 !important;
+	border: 2px solid white !important;
+	text-align :center;
+}
+
+td,tr,th {
+	padding : 5px !important;
+}
+
+.customJumb {
+	color : white !important;
+	background-color : #4F81BD !important;
+	border-radius : 0px !important;
+	padding : 0px !important;
+}
+.customJumb a {
+	color : white !important;
+}
+
+.customBtn {
+	padding-top : 30px !important;
+	background-color : #4F81BD !important;
+}
+
+.customBtnHeader {
+	background-color : #4F81BD !important;
+}
+
+.customBtn:hover , .customBtnHeader:hover {
+	background-color : #343A40 !important;
+}
+
+.mainColor {
+	color : #F14F23 !important;
+}
+
+.groupsBtn {
+	border : none !important;
+}
+
+.groupColor1 {
+	background-color : #F14F23 !important;
+}
+/* css for  carousel */
+.controls-top {
+	float : right;
+}
+.btn-floating {
+	background: #00C851 !important;
+	color : white !important;
+	position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0;
+    margin: 10px;
+    overflow: hidden;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    width: 40px;
+    height: 40px;
+	
+}
+.btn-floating:hover {
+	-webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.39) !important;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.39) !important;
+}	
+.btn-floating i {
+	display: inline-block;
+    width: inherit;
+    color: #fff;
+    text-align: center;
+	font-size: 1.15rem;
+    line-height: 40px;
+}
+.carousel-multi-item .carousel-indicators{display:none !important;}

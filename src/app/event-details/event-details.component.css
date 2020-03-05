@@ -1,0 +1,30 @@
+.eventsSection {
+	border-radius : 0px;
+	background : url('/assets/images/eventImage.jpg') !important;
+	background-repeat : no-repeat !important;
+	background-attachment : fixed !important;
+	background-position : center !important;
+	background-size : cover !important;
+}
+.eventsButtons {
+	border : 1px solid lightgrey !important;
+	color : lightgrey !important;
+}
+.facebook {
+	background-color : #3B5998 !important; 
+}
+.twitter {
+	background-color : #1DA1F2 !important;
+}
+.linkedin {
+	background-color : #006599 !important;
+}
+.googlePlus {
+	background-color :#DE5347 !important;
+}
+.whatsapp {
+	background-color : #25D366 !important;
+}
+agm-map {
+  height: 300px;
+}

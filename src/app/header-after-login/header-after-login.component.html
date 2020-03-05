@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+ 
+  <button class="navbar-toggler" type="button" (click)=" isShown = !isShown" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-center" [ngClass]="{ 'show': isShown }">
+    <ul class="navbar-nav customNavUL ">
+       <li class="nav-item">
+        <a class="nav-link p-1" routerLink="mybookings" routerLinkActive="active"> 
+			<div class="card card-default p-1"> Logo </div>
+		</a>
+      </li>
+	  <li class="nav-item">
+		<div class="input-group mb-2">
+			<div class="input-group-append">
+			  <span class="fa-search fas searchIcon text-secondary  mt-3" area-hidden="true"></span>
+			</div>
+			<input type="text" class="form-control searchInput border-0" placeholder=" Search by artist, team..">
+		</div>
+	  </li>
+	  <li class="nav-item active">
+        <a class="nav-link" routerLink="" routerLinkActive="active"> HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="hotels" routerLinkActive="active"> MLB </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about" routerLinkActive="active"> NHL </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="contact" routerLinkActive="active"> NBA </a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" routerLink="mybookings" routerLinkActive="active"> NFL </a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" routerLink="mybookings" routerLinkActive="active"> Concerts </a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" routerLink="mybookings" routerLinkActive="active"> Other </a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link btn  btn-primary text-white" routerLink="/" routerLinkActive="active"> Log Out </a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link btn btn-primary text-white"   > My Account </a>
+      </li>
+    </ul>
+  </div>
+</nav>
